@@ -1,5 +1,5 @@
-const keys = document.querySelectorAll('.key');
-keys.forEach(key => key.addEventListener('transitionend', removeTransition))
+const keys = document.querySelector('.keys');
+keys.addEventListener('transitionend', removeTransition)
 document.addEventListener('keydown', playSound);
 
 function playSound(event) {
